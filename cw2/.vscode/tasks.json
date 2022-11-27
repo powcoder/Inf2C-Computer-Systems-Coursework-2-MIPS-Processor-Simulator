@@ -1,0 +1,33 @@
+{
+    "tasks": [
+        {
+            "type": "process",
+            "label": "C/C++: clang build active file",
+            "command": "/usr/bin/clang",
+            "args": [
+                "-g",
+                // "${file}",
+                // 使用多个c文件需要手动添加，格式如下
+                "${fileDirname}/mipssim.c",
+                "${fileDirname}/memory_hierarchy.c",
+                // the .h put in the folder, /include
+                "-I",
+                "${workspaceFolder}/include",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}"
+            ],
+            "options": {
+                "cwd": "/usr/bin"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "Generated task by Debugger"
+        }
+    ],
+    "version": "2.0.0"
+}

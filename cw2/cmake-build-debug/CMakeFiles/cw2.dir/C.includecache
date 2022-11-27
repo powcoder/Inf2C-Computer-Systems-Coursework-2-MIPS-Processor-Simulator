@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/mipssim.h
+math.h
+-
+parser.h
+../include/parser.h
+
+../include/parser.h
+stdlib.h
+-
+assert.h
+-
+stdint.h
+-
+errno.h
+-
+limits.h
+-
+string.h
+-
+stdio.h
+-
+stdbool.h
+-
+
+/Users/yir/Documents/inf2c-cs-20-master/cw2/mipssim.c
+mipssim.h
+/Users/yir/Documents/inf2c-cs-20-master/cw2/mipssim.h
+
